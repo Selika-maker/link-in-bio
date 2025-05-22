@@ -1,3 +1,129 @@
-<h1>This is my homepage.</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Bryan Le's Website</title>
+    <style>
+      /*
+      * {
+        border: 3px green solid 
+      }
+      */
+      html {
+        min-height: 100%
+      }
+      body {
+        min-height: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background: linear-gradient(180deg, #69cdc9, #cbeae1, #eae2cb, #bdc269, #d3da4a, #362c0f);
+        color: rgba(160, 36, 68, 1.0);
+        font-family: "Playpen Sans Deva";
+      }
+      .main-container {
+        max-width: 640px;
+        margin: auto;
+}
+      a {
+        color: rgba(36, 68, 160, 1.0);
+        text-decoration: none;
+      }
+      .avatar-image {
+        width: 128px;
+        height: 128px;
+        object-fit: cover;
+        border-left: greenyellow;
+        border-bottom: blanchedalmond;
+      }
+      .thumbnail {
+        width: 48px;
+        height: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
+      .item {
+        background-color: rgba(123, 16, 63, 0.5);
+        margin-bottom: 20px;
+        display: flex;
+        text-align: center;
+        border-radius: 1100px;
+        padding: 10px;
+        padding-right: 53px;
+        box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
+      }
+      .image-row {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .name-row {
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: "Garamond";
+        font-size: 25px;
+        font-weight: 800;
+      }
+      .social-icons-row {
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-around;
+      }
+      .link-text {
+        text-align: center;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+<body>
+  <div class="main-container">
+    <div class="image-row">
+      <img class="avatar-image" src="/thumbnails/Delta.png" alt="Profile Pic">
+    </div>
 
-<h2>My link-in-bio</h2>
+    <div class="name-row">
+      Bryan Le
+    </div>
+
+    <div class="social-icons-row">
+      <a href="https://github.com/Selika-maker" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/bryan-le-58131a217/" target="_blank">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+
+    </div>
+    <div class="links-row">
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/Computer_Server.png" alt="Computers">
+
+        <a class="link-text" target="_blank" href="https://robbieallen.medium.com/my-curated-list-of-ai-and-machine-learning-resources-from-around-the-web-9a97823b8524">
+          List of AI Resources, sourced from Robbie Allen
+        </a>
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/UiC_Logo.png" alt="University">
+
+        <a class="link-text" target="_blank" href="https://my.uic.edu/uPortal/f/welcome/normal/render.uP">
+          MyUiC
+        </a>
+      </div>
+
+      <div class="item">
+        <img class="thumbnail" src="/thumbnails/Color_Wheel.jpg" alt="Color Wheel">
+
+        <a class="link-text" target="_blank" href="https://rgbacolorpicker.com/">
+          Color Selector
+        </a>
+      </div>
+
+      <!-- Etc etc, for as many items as you want in your list -->
+    </div> <!-- links-row -->
+  </div> <!-- main-container -->
+</body>
+</html>
