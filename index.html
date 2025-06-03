@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>
+      This is a Website Example
+    </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans+Deva:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="Icon/ready-stock.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
-    <title>Bryan Le's Website</title>
     <style>
       /*
       * {
@@ -28,7 +31,7 @@
       .main-container {
         max-width: 640px;
         margin: auto;
-}
+      }
       a {
         color: rgba(36, 68, 160, 1.0);
         text-decoration: none;
@@ -56,6 +59,17 @@
         padding-right: 53px;
         box-shadow: 4px 4px 10px 0px rgba(122,32,122,0.5);
       }
+      .navigation-bar {
+        background-color: var(--color-amaranth);
+        box-shadow: 0px 3px 4px 0px rgba(1,1,1,0.5);
+        display: flex;
+        flex-flow: row nowrap;
+        height: var(--values-nav-bar-height);
+        justify-content: space-between;
+        position: fixed;
+        width: 100%
+
+      }
       .image-row {
         margin-bottom: 20px;
         text-align: center;
@@ -78,8 +92,13 @@
       }
     </style>
   </head>
-<body>
+<body class="html-body">
   <div class="main-container">
+    <nav class="navigation-bar">
+      <div class="top-nav-logo">
+        <img class="logo" src="Icon/ready-stock.png" alt="Logo">
+      </div>
+    </nav>
     <div class="image-row">
       <img class="avatar-image" src="/thumbnails/Delta.png" alt="Profile Pic">
     </div>
